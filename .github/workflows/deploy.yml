@@ -1,0 +1,46 @@
+name: Deploy Hugo Blog
+
+on:
+  push:
+    branches:
+      - master  # or main, depending on your default branch name
+    paths:
+      - 'content/**'  # Trigger when content changes
+      - 'themes/**'  # Or when theme files change
+      - 'hugo.toml'  # Or when config changes
+      - 'archetypes/**'
+      - 'static/**'
+      - 'layouts/**'
+      - '.github/workflows/**'  # Trigger when workflow changes
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          submodules: true   # Fetch submodules (themes, etc.)
+          fetch-depth: 0    # Fetch all history for .git info
+          
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true  # Use Hugo extended version for SCSS support
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          external_repository: yongkang-yang/ykblog  # Your deployed Hugo blog repository
+          publish_branch: master  # The branch where your site is published
+          publish_dir: ./public  # Directory with the generated content
+          commit_message: ${{ github.event.head_commit.message }}  # Use the same commit message
+          full_commit_message: ${{ github.event.head_commit.message }}
+          user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'

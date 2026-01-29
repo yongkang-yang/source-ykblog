@@ -1,0 +1,50 @@
+baseURL = 'https://yongkang-yang.github.io/ykblog/'
+languageCode = 'en'
+title = 'YONGKANG YANG'
+theme = 'PaperMod'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = 'Yongkang Yang'
+  description = "Yongkang's Research Blog"
+  
+  [params.homeInfoParams]
+    Title = "Welcome to Yongkang's Blog"
+    Content = "I created this blog to document my learning and reflections in research. Feel free to comment or share, if you find any mistakes or anything unavailable or outdated, please email me at ykyang.research@gmail.com."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:ykyang.research@gmail.com"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/yongkang-yang-0530a1205/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 20
+    
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
