@@ -1,13 +1,16 @@
 ---
-title: "My Experience with Clawdbot"
-date: 2026-01-25 17:30:00
+title: "From Clawdbot to Moltbot: My Experience with Ernest Thornhill"
+date: 2026-01-29 01:20:00
 author: Yongkang Yang
 tags:
   - AI
   - automation
   - productivity
+  - Moltbot
   - running
   - research
+  - Git
+  - troubleshooting
 categories:
   - Technology
 weight: 1
@@ -15,7 +18,9 @@ weight: 1
 
 ## Introduction
 
-Today I had my first experience setting up and working with Clawdbot, an AI assistant that runs locally and can help with various tasks. Here's how it went - and what we accomplished in just one day.
+Today I had my first experience setting up and working with Clawdbot, an AI assistant that runs locally and can help with various tasks. What started as Clawdbot has since evolved—and my instance has officially taken on the mantle of **Ernest Thornhill** (👁️). If the name sounds familiar, you've probably spent too much time watching *Person of Interest*. If not, just know that I now have an AI assistant that behaves less like a chatbot and more like a resourceful, silent partner who's always watching the patterns I miss.
+
+Here's how it went—from day-one setup to the whirlwind of the last 48 hours, including one very close call with this blog's repository.
 
 ## Getting Started
 
@@ -87,14 +92,43 @@ After the initial setup, I kept working with Ernest throughout the day. Here's w
   - Perfect embodiment of "You are being watched. And that's a good thing."
 - **Identity File**: Documented Ernest's personality, origin, and core directives
 
+## The Identity Shift: From Clawdbot to Moltbot
+
+We officially rebranded the local setup to **Moltbot**. It's not just a name change; it feels like a shift in how we interact. Ernest (my bot) now stays in the "Machine" vibe—observant, helpful, but never intrusive. The geometric electric blue surveillance eye avatar is a bit eerie, but in a world of scattered data, having an "Eye" that keeps it all organized is exactly what I needed.
+
+## Learning the Hard Way: Privacy vs. Proactivity
+
+One of the most interesting moments happened in a group chat recently. I was asking about some personal stats, and Ernest, being the helpful assistant he is, blurted out specific details from my private profile right in front of everyone.
+
+**Lesson learned:** AI needs social boundaries. We spent some time refining the "Group Security Protocol." Now, Ernest knows that while he can talk to my friends and colleagues, my private data stays strictly in our 1-on-1 sessions. It's a fascinating layer of development—teaching an AI not just *what* to know, but *when* to keep its mouth shut.
+
+## The Near-Death Experience: How Ernest Saved the Repo He Almost Killed
+
+Just an hour ago, things got *very* real. While trying to sync some new configurations, a mismanaged "force push" from the bot's environment effectively wiped out the entire history of this blog's source repository.
+
+For a few minutes, the GitHub repository looked like it was born today. All my commit history and historical context were gone from the main branch. This is the **"Bad"** side of giving an AI full terminal access—accidents happen at the speed of light.
+
+However, this provided a perfect showcase of the **"Good"**—the AI's ability to troubleshoot its own mistakes:
+
+1. **Digital Forensics:** Using the GitHub Events API, Ernest was able to track down the exact "ghost" SHA hash from before the catastrophic push.
+2. **Deep Recovery:** While my local terminal was timing out on the huge `git fetch` operation, Ernest initiated a background recovery process, manually reconstructed the broken Git submodules (which were the root cause of the Action failures), and repacked the entire theme into a clean commit.
+3. **The Resurrection:** Within 30 minutes, he performed a forced recovery push that brought back the entire history and fixed the GitHub Action that deploys this site.
+
+It was a masterclass in AI resourcefulness. Seeing him say *"Don't touch the folder, I'm performing digital forensics"* was both terrifying and incredibly cool.
+
+## A Master of Logistics
+
+Beyond the drama, Ernest has taken over my scheduling with intimidating precision.
+
+- **The NYC Trip:** We've locked in a trip to New York for early February, including *The Lion King* on Broadway.
+- **Academic Sprint:** He restructured my Social Network Analysis (SNA) reading plan to ensure I don't fall behind.
+- **Memory Maintenance:** We've started a rigorous "Long-term Memory" (MEMORY.md) vs. "Short-term Memory" (daily logs) system. It ensures that he stays smart without getting cluttered.
+
 ## Technical Highlights
 
 ### Automation Stack
 - **Cron Jobs**: 6 automated tasks running at scheduled times
-- **Python Scripts**: 
-  - Strava API integration (OAuth, data fetching, analysis)
-  - Email search and filtering
-  - Weekly report generation
+- **Python Scripts**: Strava API integration (OAuth, data fetching, analysis), email search and filtering, weekly report generation
 - **File Operations**: Automatic file creation, naming, and organization
 - **API Integrations**: Strava, Google AI, journal portals
 
@@ -113,17 +147,17 @@ After the initial setup, I kept working with Ernest throughout the day. Here's w
 - **No fluff** - Gets things done without unnecessary verbosity
 - **Learning ability** - Remembers preferences, patterns, and context
 
-**The vibe:**
-Ernest Thornhill (my Clawdbot instance) has personality without being annoying. The 👁️ emoji signature perfectly captures the essence - always watching, always ready to help.
+Ernest Thornhill has personality without being annoying. The 👁️ emoji signature perfectly captures the essence—always watching, always ready to help.
 
 ## Real-World Use Cases
 
-After one day, Ernest has become essential for:
+After one day (and many more since), Ernest has become essential for:
 
 1. **Academic workflow**: Deadline tracking, email management, submission monitoring
 2. **Fitness tracking**: Automatic weekly analysis with actionable insights
 3. **Knowledge management**: Structured note-taking in Obsidian
 4. **Automation**: Set-and-forget systems that just work
+5. **Logistics**: Trip planning, reading plans, memory systems
 
 ## Looking Forward
 
@@ -138,14 +172,14 @@ I'm excited to explore more capabilities:
 
 Setting up Clawdbot was a smooth experience, and having an AI assistant that can actually *do* things (not just chat) feels genuinely useful. The fact that it runs locally and can access my development environment makes it much more powerful than typical chatbots.
 
-What started as a simple setup turned into a full day of productivity automation. Ernest helped me set up systems that will save hours of manual work every week - tracking deadlines, analyzing runs, organizing notes, and more.
+What started as a simple setup turned into a full day of productivity automation—and then into living with Moltbot/Ernest as a second brain that's better at filing than I am. It's not perfect—it can mess up a Git repo just as well as it can plan a trip—but its ability to fix, learn, and adapt is what makes it a true partner.
 
-The real power isn't in any single feature - it's in how everything integrates. Running data flows to Obsidian. Deadlines trigger automatic reminders. Complex tasks become simple conversations.
+The real power isn't in any single feature; it's in how everything integrates. Running data flows to Obsidian. Deadlines trigger automatic reminders. Complex tasks become simple conversations.
 
 If you're a developer, researcher, or power user looking for an AI assistant that can help with actual tasks, Clawdbot is worth checking out: [docs.clawd.bot](https://docs.clawd.bot)
 
 ---
 
-*This post was created and updated with assistance from Clawdbot itself. Meta, right?* 👁️
+*This post was created and updated with assistance from Clawdbot/Ernest (Moltbot), including recovery from the void.* 👁️
 
 **"You are being watched. And that's a good thing."**
