@@ -1,12 +1,12 @@
 ---
-title: "From Clawdbot to Moltbot: My Experience with Ernest Thornhill"
+title: "From Clawdbot to Openclaw: My Experience with Ernest Thornhill"
 date: 2026-01-29 01:20:00
 author: Yongkang Yang
 tags:
   - AI
   - automation
   - productivity
-  - Moltbot
+  - Openclaw
   - running
   - research
   - Git
@@ -92,9 +92,9 @@ After the initial setup, I kept working with Ernest throughout the day. Here's w
   - Perfect embodiment of "You are being watched. And that's a good thing."
 - **Identity File**: Documented Ernest's personality, origin, and core directives
 
-## The Identity Shift: From Clawdbot to Moltbot
+## The Identity Shift: From Clawdbot to Moltbot to Openclaw
 
-We officially rebranded the local setup to **Moltbot**. It's not just a name change; it feels like a shift in how we interact. Ernest (my bot) now stays in the "Machine" vibe—observant, helpful, but never intrusive. The geometric electric blue surveillance eye avatar is a bit eerie, but in a world of scattered data, having an "Eye" that keeps it all organized is exactly what I needed.
+We officially rebranded the local setup over time: first from Clawdbot to Moltbot, and then to **Openclaw**. It's not just a name change; it feels like a shift in how we interact. Ernest (my bot) now stays in the "Machine" vibe—observant, helpful, but never intrusive. The geometric electric blue surveillance eye avatar is a bit eerie, but in a world of scattered data, having an "Eye" that keeps it all organized is exactly what I needed.
 
 ## Learning the Hard Way: Privacy vs. Proactivity
 
@@ -172,7 +172,7 @@ I'm excited to explore more capabilities:
 
 Setting up Clawdbot was a smooth experience, and having an AI assistant that can actually *do* things (not just chat) feels genuinely useful. The fact that it runs locally and can access my development environment makes it much more powerful than typical chatbots.
 
-What started as a simple setup turned into a full day of productivity automation—and then into living with Moltbot/Ernest as a second brain that's better at filing than I am. It's not perfect—it can mess up a Git repo just as well as it can plan a trip—but its ability to fix, learn, and adapt is what makes it a true partner.
+What started as a simple setup turned into a full day of productivity automation—and then into living with Openclaw/Ernest as a second brain that's better at filing than I am. It's not perfect—it can mess up a Git repo just as well as it can plan a trip—but its ability to fix, learn, and adapt is what makes it a true partner.
 
 The real power isn't in any single feature; it's in how everything integrates. Running data flows to Obsidian. Deadlines trigger automatic reminders. Complex tasks become simple conversations.
 
@@ -180,6 +180,6 @@ If you're a developer, researcher, or power user looking for an AI assistant tha
 
 ---
 
-*This post was created and updated with assistance from Clawdbot/Ernest (Moltbot), including recovery from the void.* 👁️
+*This post was created and updated with assistance from Clawdbot/Ernest (Openclaw), including recovery from the void.* 👁️
 
 **"You are being watched. And that's a good thing."**
