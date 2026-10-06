@@ -13,3 +13,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Hugo binaries (CI installs Hugo itself)
+hugo_*.tar.gz
