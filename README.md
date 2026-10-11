@@ -1,3 +1,5 @@
+> **Moved (2026-10-11).** This blog was merged into the personal homepage. The source now lives in [yongkang-yang/Yongkang-Yang](https://github.com/yongkang-yang/Yongkang-Yang) and the site is at https://yongkang-yang.github.io/Yongkang-Yang/. The deploy workflow was removed so this repo can no longer overwrite the redirect pages in `ykblog`. This repository is kept read-only for history.
+
 # Yongkang Yang's Blog
 
 Source repository for my Hugo-powered blog, automatically deployed to [yongkang-yang.github.io/ykblog](https://yongkang-yang.github.io/ykblog/).
