@@ -1,0 +1,12 @@
+{
+  "workspace": "yongkang",
+  "web_url": "https://app.plane.so/yongkang",
+  "projects": [
+    {
+      "id": "909384a9-a3f8-49b8-ab8f-1b50f2f22d60",
+      "identifier": "BLOG",
+      "name": "Personal Blog",
+      "url": "https://app.plane.so/yongkang/projects/909384a9-a3f8-49b8-ab8f-1b50f2f22d60/work-items/"
+    }
+  ]
+}
